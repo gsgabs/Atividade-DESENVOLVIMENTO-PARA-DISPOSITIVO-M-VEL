@@ -11,14 +11,9 @@ class RandomPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("${Random().nextInt(20)}"),
+            // Código 2: Retornar para a primeira tela.
             TextButton(
-              onPressed: () => {
-                // Código 2: Retornar para a primeira tela.
-                TextButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: Text("Voltar"),
-                )
-              },
+              onPressed: () => Navigator.pop(context),
               child: Text("Voltar"),
             )
           ],

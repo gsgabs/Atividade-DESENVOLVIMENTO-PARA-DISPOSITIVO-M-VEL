@@ -9,16 +9,11 @@ class Home_Page extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             // Código 1: Navega para a segunda tela.
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => RandomPage(),
-                  ),
-                );
-              },
-              child: Text("Random"),
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => RandomPage(),
+              ),
             );
           },
           child: const Text("Random"),
