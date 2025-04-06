@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(title: Text('Login')),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Form(
           key: _formKey,
           child: Column(
@@ -76,6 +76,8 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: _login,
                 child: Text('Entrar'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
                   minimumSize: Size(double.infinity, 50),
                 ),
               ),

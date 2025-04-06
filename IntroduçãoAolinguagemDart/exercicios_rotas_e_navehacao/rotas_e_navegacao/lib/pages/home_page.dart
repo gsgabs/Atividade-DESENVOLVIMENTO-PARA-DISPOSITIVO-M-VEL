@@ -5,14 +5,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Página Inicial'),
+        title: Text('Flutter'),
         automaticallyImplyLeading: false, // Remove o botão de voltar
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.check_circle, color: Colors.green, size: 100),
+            Icon(Icons.flutter_dash_rounded, color: Colors.lightBlue, size: 60),
             SizedBox(height: 20),
             Text(
               'Login realizado com sucesso!',
